@@ -1,0 +1,11 @@
+services:
+  phpsysinfo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phpsysinfo
+    restart: unless-stopped
+    ports:
+      - "3846:80"
+    volumes:
+      - /sys:/sys:ro
