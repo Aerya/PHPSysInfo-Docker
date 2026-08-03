@@ -1,4 +1,4 @@
-FROM php:8.3-apache
+FROM php:8.5-apache
 
 # Paquets utiles pour l'inventaire matériel
 RUN apt-get update -qq && apt-get install -y --no-install-recommends \
